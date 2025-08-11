@@ -383,7 +383,7 @@ document.getElementById('generator-form').addEventListener('submit', async (e) =
 
 // --- GEMINI API FUNCTIONS ---
 const callGeminiApi = async (model, payload, retries = 3, delay = 1000) => {
-    const apiKey = ""; 
+    const apiKey = "AIzaSyAPnT1BOy9fEXfJn2g2bgUDvad3PetxEZg"; 
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
     for (let i = 0; i < retries; i++) {
@@ -413,7 +413,7 @@ const callGeminiApi = async (model, payload, retries = 3, delay = 1000) => {
 };
 
 const callImagenApi = async (model, prompt, retries = 3, delay = 1000) => {
-    const apiKey = "AIzaSyBSBz_wssUObDeFOLYZgvvCusxVl2eH1mg";
+    const apiKey = "AIzaSyAPnT1BOy9fEXfJn2g2bgUDvad3PetxEZg";
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:predict?key=${apiKey}`;
     const payload = { instances: { prompt: prompt }, parameters: { "sampleCount": 1 } };
 
