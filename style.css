@@ -1,0 +1,30 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Controla el tamaño máximo del gráfico */
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tab-active {
+    border-bottom-color: #a78bfa; /* Violeta */
+    color: #7c3aed;
+    font-weight: 600;
+}
+.task-card {
+    transition: all 0.3s ease;
+}
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    transition: all 0.3s ease;
+}
